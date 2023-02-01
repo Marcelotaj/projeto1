@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+    <title>Meus trabalhos</title>
+    
+</head>
+<body>
+    <nav>
+    <div class='primary-menu' id='primary-menu'>
+        
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#meusprojetos">Meus Projetos</a>
+            </li>
+            <li>
+                <a href="#sobremim">Sobre Mim</a>
+            </li>
+            <li> 
+                <a href="#contato">Fale Comigo</a>
+            </li>        
+        </ul>
+        </div>
+        </nav>
+    
+
+    <div class="meusprojetos" id="meusprojetos">
+        <h1>Meus Projetos</h1></div>
+    <!-- Inicio do Carrossel -->
+    <section class="imgSection">
+            <a href="#imagem1"><img src="aideahome.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem2"><img src="aideacontato.png" alt="Contato AIdea3" class="imagem" /></a>
+            <a href="#imagem3"><img src="aideaserv.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem4"><img src="clubefabri.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem5"><img src="clubehome.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem6"><img src="eroshome.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem7"><img src="eroscontato.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem8"><img src="erosclientes.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem9"><img src="opushome.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem10"><img src="opusserv.png" alt="Home AIdea3" class="imagem" /></a>
+            <a href="#imagem11"><img src="opusfooter.png" alt="Home AIdea3" class="imagem" /></a>
+</section>
+    </div>
+
+    <!-- Header com botao Modal de form -->
+    <div class="contato" id="contato"><button id="btnContato">Contato</button>
+        </div>
+        
+        <dialog>
+            <div class="modal" id="contato">
+                <form id="form">
+                    <input type="text" id="nome" placeholder="Nome Completo" required></input>
+                    <input type="tel" id="celular" placeholder="Celular" maxlength="15" size="25" onkeyup="handlePhone(event)" required></input>
+                    <input type="email" id="email" placeholder="E-mail" required></input>
+                    <input type="text" id="texto" maxlength="20" placeholder="Fale um pouco mais!"></input>
+                    <input type="submit" id="enviar" value="Enviar"></input>
+                </form>
+                <button id="btnClose">Fechar</button>
+            </div>
+        </dialog>
+
+
+    <!-- Lightbox -->
+
+    <div class="lightboxes">
+        <div class="lightbox" id="imagem1">
+        <a href="#" class="fechar">&times;</a>
+        <img src="aideahome.png" alt="Home AIdea3" class="imagem" />
+        </div>
+
+        <div class="lightbox" id="imagem2">
+        <a href="#" class="fechar">&times;</a>
+        <img src="aideacontato.png" alt="Contato AIdea3" class="imagem" />
+        </div>
+        
+        <div class="lightbox" id="imagem3">
+        <a href="#" class="fechar">&times;</a>
+        <img src="aideaserv.png" alt="Home AIdea3" class="imagem" />
+        </div>
+        
+        <div class="lightbox" id="imagem4">
+        <a href="#" class="fechar">&times;</a>
+        <img src="clubefabri.png" alt="Home AIdea3" class="imagem" />
+        </div>
+        
+        <div class="lightbox" id="imagem5">
+        <a href="#" class="fechar">&times;</a>
+        <img src="clubehome.png" alt="Home AIdea3" class="imagem" />
+        </div>
+        
+        <div class="lightbox" id="imagem6">
+        <a href="#" class="fechar">&times;</a>
+        <img src="eroshome.png" alt="Home AIdea3" class="imagem" />
+        </div>
+
+        <div class="lightbox" id="imagem7">
+        <a href="#" class="fechar">&times;</a>
+        <img src="eroscontato.png" alt="Home AIdea3" class="imagem" />
+        </div>
+        
+        <div class="lightbox" id="imagem8">
+        <a href="#" class="fechar">&times;</a>
+        <img src="erosclientes.png" alt="Home AIdea3" class="imagem" />
+        </div>
+        
+        <div class="lightbox" id="imagem9">
+        <a href="#" class="fechar">&times;</a>
+        <img src="opushome.png" alt="Home AIdea3" class="imagem" />
+        </div>
+        
+        <div class="lightbox" id="imagem10">
+        <a href="#" class="fechar">&times;</a>
+        <img src="opusserv.png" alt="Home AIdea3" class="imagem" />
+        </div>
+
+        <div class="lightbox" id="imagem11">
+        <a href="#" class="fechar">&times;</a>
+        <img src="opusfooter.png" alt="Home AIdea3" class="imagem" />
+        </div>
+    </div>
+
+        <div class="sobremim" id="sobremim">
+            <h1>Sobre Mim</h1>
+        <p>Meu nome é Marcelo Mitsudy Tajiri, tenho 32 anos e sou apaixonado por Tecnologia.<br> Me graduei em Análise e Desenvolvimento de Sistemas, e atuo na área de Front End há mais de três anos.<br> Tenho conhecimento sólido em HTML5, CSS3 e Javascript (ES5 e ES6).
+
+        </p>
+        </div>
+
+        <div class="row">
+
+            <div class="coluna-50">
+                <nav>
+                <div class="footer-menu">
+                    <h3>Menu</h3><br>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#meusprojetos">Meus Projetos</a>
+                        </li>
+                        <li>
+                            <a href="#sobremim">Sobre Mim</a>
+                        </li>
+                        <li>
+                            <a href="#contato">Fale Comigo</a>
+                        </li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+            <div class="coluna-50" id="btnSocial"><h3>MInhas Redes Sociais</h3><br>
+                <ul>
+                    <li><a href="https://www.facebook.com/marcelo.tajiri" target="_blank" title="facebook" style="display:table;padding:25px;background:url('http://www.iconninja.com/files/387/198/566/logo-social-fb-facebook-icon.svg') center;background-size: 40px 40px;
+                        background-repeat: no-repeat; "></a></li>
+                    <li><a href="https://www.linkedin.com/in/marcelo-mitsudy-tajiri-3a136796/" target="_blank" title="linkedin" style="display:table;padding:25px;background:url('http://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-256.png') center;background-size: 40px 40px;
+                        background-repeat: no-repeat; "></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5541996382897&text=FaleComigo" target="_blank" title="whatsapp" style="display:table;padding:25px;background:url('icon-whats.png') center;background-size: 40px 40px;
+                            background-repeat: no-repeat; "></a></li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+    <footer>
+        &copy; Copyright Marcelo Tajiri - 2023
+    </footer>
+    <button id="btnTop"><a href="#top" style="color: white">topo</a></button>
+    <noscript>Habilite o Javascript para visualizar esta página.</noscript>
+    <script src="script.js"></script>
+
+</body>
+</html>

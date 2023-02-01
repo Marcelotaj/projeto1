@@ -1,0 +1,354 @@
+* {
+  margin-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+html, body {
+    box-sizing: border-box;
+    background-color: #121212;
+    }
+
+nav {
+  height: 50px;
+}
+
+p {
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  font: normal 18px Roboto;
+  text-align: justify;
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+  white-space: nowrap;
+  animation: fadeIn 4s;
+  
+}
+
+h1 {
+    text-align: center;
+    overflow: hidden;
+    font: bold 35px Roboto;
+    color: rgb(247, 242, 242);
+    margin: 5%;
+    margin-top: 7em;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+#contato {
+  margin-bottom: 50px;
+}
+
+/* Rodapé */
+
+footer {
+    bottom: 0;
+    position: fixed;
+    color: #fff;
+    font: normal 14px Roboto;
+    background-color: #121212;
+}
+
+.row {
+  display: flex;
+  flex-flow:row wrap;
+  height: 10em;
+  margin-top: 10vh;
+  text-align: center;
+  border-top: solid 1px white;
+  font: normal 16px Roboto;
+}
+
+.coluna-50 {
+  color: white;
+  width: 50%;
+  margin-top: 20px;
+
+}
+
+/* Itens do menu */
+
+#primary-menu ul {
+    max-width: auto;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+#primary-menu ul li {
+    display: inline;
+   
+}
+
+#primary-menu ul li a {
+    display: inline-flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font: normal 18px Roboto;
+
+}
+
+#primary-menu ul li a:hover {
+
+    background-color: rgba(26, 52, 136, 0.705);
+    border-radius: 10%;
+}
+
+#primary-menu ul li:first-child a{
+    border-bottom: solid 1px white;
+}
+
+.faleComigo {
+  background-color: rgba(26, 52, 136, 0.705);
+  font: normal 18px Roboto;
+  color: white;
+  border: solid 1px white;
+  border-radius: 10%;
+  width: 10vh;
+  height: 5vh;
+}
+
+.faleComigo:hover {
+  opacity: .7;
+}
+/* Menu footer */
+
+.footer-menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  list-style: none;
+} 
+
+/* Todas as imagens do site */
+
+img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 1em;
+}
+
+/* Galeria de imagens Projeto*/
+
+.imgSection {
+
+  display: grid;
+  grid-gap:0.7em;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 90%;
+  margin: 2em auto;
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.imgSection a {
+  cursor: zoom-in;
+  transition: filter 0.4s ease-in-out;
+}
+
+.imgSection a:hover {
+  filter: brightness(90%);
+}
+
+/* Lightbox em acao */
+
+.lightbox {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed;
+  z-index: 1000;
+}
+
+.lightbox:target {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.lightbox img {
+  border-radius: 1em;
+  display: block;
+  margin: auto;
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.lightbox .fechar {
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  height: 1em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 1em;
+
+}
+
+
+/* Cabecalho do Botao Modal */
+
+.contato {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('banner-img.jpg') center no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-color: rgb(0 0 /.4);
+   
+}
+
+#btnContato {
+ font: normal 22px Roboto;
+ color:#fff;
+ padding: 40px;
+ background-color: rgb(163, 38, 38);
+ border-radius: 10%;
+ border: solid 1px white;
+ text-decoration: none;
+
+}
+
+#btnContato:hover {
+   color: #fff;
+   background-color: rgba(26, 52, 136, 0.705);
+
+}
+
+/* Definicoes do formulario */
+
+#form {
+  position: relative;
+  display: inline-block;
+  left:37%;
+  top:39%;
+  width:320px;
+  height:270px;
+  padding: 10px;
+}
+
+
+input {
+
+  height: 20px;
+  padding: 10px;
+
+}
+
+input#enviar {
+  background-color: #121212;
+  color: white;
+  border: solid 2px white;
+  font: normal 12pt Roboto;
+  border-radius: 10px;
+  padding: 1.8em;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#enviar:hover {
+  background-color: #b3aeae9a;
+  color:#121212;
+
+}
+
+/* Definicoes do Modal */
+
+dialog {
+  border-radius: .5em;
+  border: solid 1px white;
+  padding-top: 10px;
+  box-shadow: 0 0 .3em rgba(51, 65, 141, 0.5);
+  width: 50%;
+  height: 350px;
+  background-color: rgba(47, 55, 133, 0.3);
+  margin: auto;
+  
+}
+
+dialog::backdrop {
+  background: rgb(0 0 / .3);
+}
+
+    #btnClose {
+      background-color: red;
+      display: block;
+      color: white;
+      bottom: 0;
+      border: solid 1px white;
+      border-radius: 1px;
+      padding: 0.7em;
+      float: right;
+      
+
+    }
+
+    dialog #btnClose:hover {
+      background-color: rgba(255, 0, 0, 0.507);
+    }
+
+    #btnSocial ul li {
+      
+    display: inline-block;
+	  list-style:none; 
+	  margin:auto;
+    padding: auto;
+	  overflow:hidden; 
+	  border-radius:3px;
+	  font-size:1.5em; 
+	  text-align:center;
+    width: 50px;  }
+
+    #btnSocial ul li:hover {
+      opacity: 0.7;
+    }
+
+    /* Top Button */
+
+    #btnTop {
+      position: fixed;
+      bottom: 15px;
+      text-transform: uppercase;
+      left: 95%;
+      height: 40px;
+      max-width: 90px;
+      width: 90%;
+      font-size: 18px;
+      border-color: rgba(85, 85, 85, 0.2);
+      background-color: rgb(100,100,100);
+      padding: 1.5px;
+      border-radius: 4px;
+
+  }
+
+  #btnTop:hover {
+      background-color: rgba(255, 0, 0, 0.507);;
+  }
+    
